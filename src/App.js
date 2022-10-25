@@ -3,7 +3,8 @@ import './App.css';
 import ShoppingCart from './Components/ShoppingCart';
 import ProductsList from './Components/ProductsList';
 import useStore from './store';
-import Body from './Components/body/Body';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   const { ShoppingCartStatus,FecthData, } = useStore();
