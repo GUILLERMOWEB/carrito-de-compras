@@ -11,6 +11,8 @@ import InfoBanner from './Components/InfoBanner';
 import TrademarksBanner from './Components/TrademarksBanner';
 import Body from './Components/body/Body';
 import CarouselInstagram from './Components/carrousel/Carousel';
+import Slider from './Components/Slider';
+import SliderMobile from './Components/SliderMobile';
 
 function App() {
 
@@ -42,10 +44,21 @@ function App() {
       }
       <Body />
       <TrademarksBanner />
+{/*   
+  ****** PARA USAR ESTE CARRUSEL HAY QUE INSTALAR: ******
+
+  ****** npm install react-material-ui-carousel ******
+
+ */}
+    
+      {
+      windowWidth > 768 ? <Slider /> : <SliderMobile />
+      }
+
 
       <ProductsList />
 
-    <CarouselInstagram/>
+{/*       <CarouselInstagram/> */}
 
       <InfoBanner />
       
